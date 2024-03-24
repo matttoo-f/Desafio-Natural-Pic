@@ -1,2 +1,13 @@
-# Desafio-Natural-Pic
-desafio de uso de context
+# React + Vite
+
+## Install
+
+```bash
+npm install
+```
+
+## Run
+
+```bash
+npm run dev
+```
