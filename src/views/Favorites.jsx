@@ -9,7 +9,7 @@ const likedPhotos = data.photos.filter((e)=> e.liked)
 
   return (
     <div>
-      <h1>Fotos favoritas</h1>
+      <h1 className="titulo">Fotos favoritas</h1>
       <div className="p-3 gallery grid-columns-4">
         {likedPhotos.map((element)=>{
           return  <img key={element.id} src={element.src.small} alt={element.alt} />
