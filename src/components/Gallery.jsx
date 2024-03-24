@@ -28,10 +28,11 @@ const Gallery = () => {
   return <div className="gallery grid-columns-5 p-3">
 
     {data.photos.map((element,index)=> {
+      const style = {backgroundImage: `url(${element.src.medium})`}
       return(
-        <div onClick={()=>clickLiked(index)} className="photo" key={element.id}>
+        <div style={style} onClick={()=>clickLiked(index)} className="photo" key={element.id}>
           <IconHeart filled = {element.liked}/>
-          <img src={element.src.small} alt={element.alt} />
+          {/* <img src={element.src.small} alt={element.alt} /> */}
           <p>{element.alt}</p>
         </div>
       )
